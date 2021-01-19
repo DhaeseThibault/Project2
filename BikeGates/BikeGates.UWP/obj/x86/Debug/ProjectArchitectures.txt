@@ -1,0 +1,1 @@
+D:\Project2\BikeGates\BikeGates.UWP\BikeGates.UWP.csproj;x86

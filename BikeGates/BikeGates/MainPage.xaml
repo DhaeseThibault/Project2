@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BikeGates" xmlns:local1="clr-namespace:BikeGates.Models"
+             x:Class="BikeGates.MainPage" 
+             NavigationPage.HasNavigationBar="False" NavigationPage.HasBackButton="False">
+
+    <StackLayout Padding="32,16,32,32" BackgroundColor="#171721">
+        <Label Text="BikeGates" TextColor="#FFFFFF" FontSize="30" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+
+        <Frame Margin="0,48,0,0" Padding="1" BackgroundColor="#171721" BorderColor="White">
+            <Image Source="{local1:ImageResourceExtensions BikeGates.Images.Smartgoal.png}" WidthRequest="311" HeightRequest="224" Aspect="AspectFill" />
+        </Frame>
+
+        <Button Margin="0,64,0,0" Text="Play" FontAttributes="Bold" FontSize="30" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="72"/>
+        <Button Margin="0,32,0,0" Text="Leaderboard" FontAttributes="Bold" FontSize="30" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="72"/>
+    </StackLayout>
+
+</ContentPage>

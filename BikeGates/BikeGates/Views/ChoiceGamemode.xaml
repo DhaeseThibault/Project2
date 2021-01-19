@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeGates.Views.ChoiceGamemode"
+             xmlns:local="clr-namespace:BikeGates" xmlns:local1="clr-namespace:BikeGates.Models"
+             NavigationPage.HasNavigationBar="False">
+
+
+        <StackLayout Padding="32,16,32,32" BackgroundColor="#171721">
+            <!--TOPBAR-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35" />
+                <Label Grid.Column="1" Margin="60,0,87,0" Text="Gamemode" TextColor="#ffffff" FontSize="30" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </Grid>
+        <ScrollView>
+            <StackLayout>
+                <!--GAMEMODE PARKOUR-->
+                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,32,0,0" Padding="0,0,0,0">
+                    <StackLayout Margin="16,16,16,16">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="Parkour" FontSize="30" TextColor="#ffffff" FontAttributes="Bold" />
+                            <Image Grid.Column="1" Source="{local1:ImageResourceExtensions BikeGates.Images.Parkour.png}" Margin="0,0,64,0" HeightRequest="70" WidthRequest="70" HorizontalOptions="End"/>
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="During the track you 
+                           have to collect as many points as possible by driving as fast as you can to the illuminated gate. 3 
+                           points for a green gate, 2 for an orange gate and 0 for a red gate."
+                           FontSize="18" TextColor="#ffffff" MaxLines="6" FontAttributes="Bold" Opacity="0.6" Grid.Column="0" HorizontalTextAlignment="Start"/>
+                            <Image Grid.Column="1" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowRight.png}" WidthRequest="50" HeightRequest="50" VerticalOptions="End" Margin="8,0,0,0"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+                <!--GAMEMODE TIME RACE-->
+                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,24,0,0" Padding="0,0,0,0">
+                    <StackLayout Margin="16,16,16,16">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="Time Race" FontSize="30" TextColor="#ffffff" FontAttributes="Bold" />
+                            <Image Grid.Column="1" Source="{local1:ImageResourceExtensions BikeGates.Images.TimeRace.png}" Margin="0,0,64,0" HeightRequest="70" WidthRequest="70" HorizontalOptions="End"/>
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="During a time race, 
+                           you must complete a track as quickly as possible. The track will be shown in advance by means of lighting."
+                           FontSize="18" TextColor="#ffffff" MaxLines="6" FontAttributes="Bold" Opacity="0.6" Grid.Column="0" HorizontalTextAlignment="Start"/>
+                            <Image Grid.Column="1" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowRight.png}" WidthRequest="50" HeightRequest="50" VerticalOptions="End" Margin="8,0,0,0"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+                <!--GAMEMODE SURVIVAL-->
+                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,24,0,0" Padding="0,0,0,0">
+                    <StackLayout Margin="16,16,16,16">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="Survival" FontSize="30" TextColor="#ffffff" FontAttributes="Bold" />
+                            <Image Grid.Column="1" Source="{local1:ImageResourceExtensions BikeGates.Images.Survival.png}" Margin="0,0,64,0" HeightRequest="70" WidthRequest="70" HorizontalOptions="End"/>
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="During a time race, 
+                           you must complete a track as quickly as possible. The track will be shown in advance by means of lighting."
+                           FontSize="18" TextColor="#ffffff" MaxLines="6" FontAttributes="Bold" Opacity="0.6" Grid.Column="0" HorizontalTextAlignment="Start"/>
+                            <Image Grid.Column="1" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowRight.png}" WidthRequest="50" HeightRequest="50" VerticalOptions="End" Margin="8,0,0,0"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+        </ScrollView>
+            
+        </StackLayout>
+    
+</ContentPage>
