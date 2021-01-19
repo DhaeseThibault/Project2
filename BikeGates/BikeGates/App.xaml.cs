@@ -11,7 +11,7 @@ namespace BikeGates
         {
             InitializeComponent();
 
-            MainPage = new EndScreenParkour();
+            MainPage = new ChoicePlayer();
         }
 
         protected override void OnStart()
