@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeGates.Views.LeaderboardParkour"
+             xmlns:local="clr-namespace:BikeGates" xmlns:local1="clr-namespace:BikeGates.Models"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:controls="clr-namespace:BikeGates.Models">
+
+    <StackLayout Padding="32,16,32,32" BackgroundColor="#171721" >
+        <!--TOPBAR-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35" />
+            <Label Grid.Column="1" Margin="60,-8,87,0" Text="Leaderboard" TextColor="#ffffff" FontSize="30" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+        </Grid>
+        
+        <!--FILTER FOR LEADERBOARD-->
+        <controls:CustomPicker HorizontalOptions="Fill" VerticalOptions="Start"
+                     HeightRequest="40" 
+                     Image="ic_arrow_drop_down"
+                     Title="Choose gamemode" TextColor="White" TitleColor="White"
+                     Margin="0,32,0,0">
+            <controls:CustomPicker.Items>
+                <x:String>Parkour</x:String>
+                <x:String>Survival</x:String>
+                <x:String>Time race</x:String>
+            </controls:CustomPicker.Items>
+
+        </controls:CustomPicker>
+        
+        <!--LABELS VOOR OVERZICHT LEADERBOARD-->
+        <Grid Margin="0,32,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="Rank"   TextColor="White" Margin="0,0,0,-8" FontAttributes="Bold"/>
+            <Label Grid.Column="1" Text="Name"   TextColor="White" Margin="0,0,0,-8" FontAttributes="Bold"/>
+            <Label Grid.Column="2" Text="Points" TextColor="White" Margin="0,0,0,-8" HorizontalTextAlignment="End" FontAttributes="Bold"/>
+        </Grid>
+
+        <!--LEADERBOARD OVERVIEW WITH LISTVIEW-->
+        <ListView SeparatorColor="White" x:Name="lvwLeaderboard">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="1."                   Grid.Column="0"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White"/>
+                            <Label Text="{Binding Name}"       Grid.Column="1"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White"/>
+                            <Label Text="{Binding Score}"      Grid.Column="2"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White" HorizontalTextAlignment="End"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        
+    </StackLayout>
+</ContentPage>
