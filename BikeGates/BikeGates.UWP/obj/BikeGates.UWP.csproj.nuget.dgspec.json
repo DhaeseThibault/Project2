@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project2\\BikeGates\\BikeGates.UWP\\BikeGates.UWP.csproj": {}
+    "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates.UWP\\BikeGates.UWP.csproj": {}
   },
   "projects": {
-    "D:\\Project2\\BikeGates\\BikeGates.UWP\\BikeGates.UWP.csproj": {
+    "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates.UWP\\BikeGates.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project2\\BikeGates\\BikeGates.UWP\\BikeGates.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates.UWP\\BikeGates.UWP.csproj",
         "projectName": "BikeGates.UWP",
-        "projectPath": "D:\\Project2\\BikeGates\\BikeGates.UWP\\BikeGates.UWP.csproj",
-        "packagesPath": "C:\\Users\\thibault.dhaese\\.nuget\\packages\\",
-        "outputPath": "D:\\Project2\\BikeGates\\BikeGates.UWP\\obj\\",
+        "projectPath": "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates.UWP\\BikeGates.UWP.csproj",
+        "packagesPath": "C:\\Users\\walra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\thibault.dhaese\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\walra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -28,14 +28,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://www.myget.org/F/abtsoftware/api/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "D:\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj": {
-                "projectPath": "D:\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj"
+              "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj": {
+                "projectPath": "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj"
               }
             }
           }
@@ -88,20 +87,20 @@
         }
       }
     },
-    "D:\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj": {
+    "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj",
+        "projectUniqueName": "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj",
         "projectName": "BikeGates",
-        "projectPath": "D:\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj",
-        "packagesPath": "C:\\Users\\thibault.dhaese\\.nuget\\packages\\",
-        "outputPath": "D:\\Project2\\BikeGates\\BikeGates\\obj\\",
+        "projectPath": "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj",
+        "packagesPath": "C:\\Users\\walra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\thibault.dhaese\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\walra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -110,7 +109,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://www.myget.org/F/abtsoftware/api/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

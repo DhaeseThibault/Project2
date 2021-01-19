@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aOvDKjCNnWJUHN6GHRK3lhZhI/kfnzwaPNw/gTBhoR57WbYyRbGn8Ae+40spHc48Ne+7fUy6h1yk4ztPIG9kWA==",
+  "dgSpecHash": "tOwsnQVHewwqFahCC1o3FioxJtLs7eNeiSsS2ltykh3Z2aHX3v6He7Z1Rw41vH/RCrDsCvQJS6N1AmQjxPYcEQ==",
   "success": true,
-  "projectFilePath": "D:\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj",
+  "projectFilePath": "C:\\Users\\walra\\Desktop\\Team_Project\\Project2\\BikeGates\\BikeGates\\BikeGates.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\thibault.dhaese\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\thibault.dhaese\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\thibault.dhaese\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\walra\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\walra\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\walra\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
