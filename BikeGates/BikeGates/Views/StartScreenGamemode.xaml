@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeGates.Views.StartScreenGamemode"
+             xmlns:local="clr-namespace:BikeGates" xmlns:local1="clr-namespace:BikeGates.Models"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <StackLayout Padding="32,16,32,32" BackgroundColor="#171721">
+        <!--TOPBAR-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="btnGoBack"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Grid.Column="1" Margin="60,0,87,0" Text="Starting" TextColor="#ffffff" FontSize="30" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+        </Grid>
+
+        <!--OVERVIEW OF THE OBJECTIVE-->
+        <Label Text="Objective" TextColor="White" FontSize="30" FontAttributes="Bold" Margin="0,32,0,0"/>
+        <Label x:Name="lblObjectiveText" Text="You have to drive between the cones that light up. When a cone is green you get 3 points, when it is orange you get 2 points and when it is red you don't get any points. Collect as many points as possible during the 2-minute time period."
+               Opacity="0.6" TextColor="white" FontSize="15"/>
+
+        <!--PLAYER WHO NEEDS TO BE READY-->
+        <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,64,0,0" Padding="0,32,0,32" VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <Label x:Name="lblName" Text="Thibault" TextColor="White" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <Label Text="Get ready!" TextColor="White" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+
+        <!--CREATE BUTTON-->
+        <Frame BorderColor="White" CornerRadius="7" BackgroundColor="#2C2C34" VerticalOptions="EndAndExpand">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="GoCountdownScreen"/>
+            </Frame.GestureRecognizers>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Start" FontSize="30" FontAttributes="Bold" TextColor="White"/>
+                <Image Grid.Column="1" HorizontalOptions="End" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowRight.png}" WidthRequest="35" HeightRequest="35" />
+            </Grid>
+        </Frame>
+    </StackLayout>
+</ContentPage>

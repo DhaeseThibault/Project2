@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeGates.UWP", "BikeGates.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeGates.Android", "BikeGates.Android\BikeGates.Android.csproj", "{BD0E8084-4065-4EB6-B69F-2BE4F32206E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeGates", "BikeGates\BikeGates.csproj", "{0AFF6CD0-FC55-4ACC-9A4A-AE23FA889E98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeGates", "BikeGates\BikeGates.csproj", "{0AFF6CD0-FC55-4ACC-9A4A-AE23FA889E98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

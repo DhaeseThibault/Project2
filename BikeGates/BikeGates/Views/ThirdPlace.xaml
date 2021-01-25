@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeGates.Views.ThirdPlace"
+             xmlns:local="clr-namespace:BikeGates" xmlns:local1="clr-namespace:BikeGates.Models" 
+             BackgroundImageSource="{local1:ImageResourceExtensions BikeGates.Images.ThirdPlace.png}">
+
+    <StackLayout BackgroundColor="Transparent">
+        <Label Text="Robin" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalTextAlignment="Center" Margin="0,300,0,0"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeGates.Views.EndLeaderboard"
+             xmlns:local="clr-namespace:BikeGates" xmlns:local1="clr-namespace:BikeGates.Models"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <StackLayout Padding="32,16,32,32" BackgroundColor="#171721">
+        <!--TOPBAR-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35" />
+            <Label Grid.Column="1" Margin="60,-8,87,0" Text="Result" TextColor="#ffffff" FontSize="25" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+        </Grid>
+
+        <!--LABELS VOOR OVERZICHT LEADERBOARD-->
+        <Grid Margin="0,32,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="Rank"   TextColor="White" Margin="0,0,0,-8" FontAttributes="Bold"/>
+            <Label Grid.Column="1" Text="Name"   TextColor="White" Margin="0,0,0,-8" FontAttributes="Bold"/>
+            <Label Grid.Column="2" Text="Points" TextColor="White" Margin="0,0,0,-8" HorizontalTextAlignment="End" FontAttributes="Bold"/>
+        </Grid>
+
+        <!--LEADERBOARD OVERVIEW WITH LISTVIEW-->
+        <ListView SeparatorColor="White" x:Name="lvwLeaderboard">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="1."                   Grid.Column="0"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White"/>
+                            <Label Text="{Binding Name}"       Grid.Column="1"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White"/>
+                            <Label Text="{Binding Score}"      Grid.Column="2"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White" HorizontalTextAlignment="End"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <!--BUTTON TO GO TO MAINPAGE-->
+        <Button x:Name="btnHome" Clicked="OpenMainPage" Margin="0,64,0,0" Text="Play" FontAttributes="Bold" FontSize="30" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="72"/>
+
+    </StackLayout>
+</ContentPage>

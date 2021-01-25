@@ -5,7 +5,6 @@
              xmlns:local="clr-namespace:BikeGates" xmlns:local1="clr-namespace:BikeGates.Models"
              NavigationPage.HasNavigationBar="False">
 
-    <ScrollView>
         <StackLayout Padding="32,16,32,32" BackgroundColor="#171721">
             <!--TOPBAR-->
             <Grid>
@@ -14,58 +13,67 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35" />
-                <Label Grid.Column="1" Margin="60,0,87,0" Text="Review" TextColor="#ffffff" FontSize="30" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="imgBackBtn"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Grid.Column="1" Margin="60,0,87,0" Text="Review" TextColor="#ffffff" FontSize="25" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
             </Grid>
+            <ScrollView>
+            <StackLayout>
+                <!--OVERVIEW GAMEMODE-->
+                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,16,0,0" Padding="0,0,0,0">
+                    <StackLayout>
+                        <Label Text="Gamemode" FontSize="30" FontAttributes="Bold" TextColor="White" Margin="16,8,0,0"/>
+                        <Image x:Name="imgParkour" Source="{local1:ImageResourceExtensions BikeGates.Images.Parkour.png}" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" Margin="0,0,0,0"/>
+                        <Image x:Name="imgTimeRace" Source="{local1:ImageResourceExtensions BikeGates.Images.TimeRace.png}" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" Margin="0,0,0,16" IsVisible="false"/>
+                        <Image x:Name="imgSurvival" Source="{local1:ImageResourceExtensions BikeGates.Images.Survival.png}" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" Margin="0,0,0,16" IsVisible="false"/>
+                        <Label x:Name="lblGamemode" Text="" FontSize="25" TextColor="#20BFA9" HorizontalTextAlignment="Center" Margin="0,-24,0,16" Padding="0,0,0,0"/>
+                    </StackLayout>
+                </Frame>
 
-            <!--OVERVIEW GAMEMODE-->
-            <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,16,0,0" Padding="0,0,0,0">
-                <StackLayout>
-                    <Label Text="Gamemode" FontSize="30" FontAttributes="Bold" TextColor="White" Margin="16,8,0,0"/>
-                    <Image Source="{local1:ImageResourceExtensions BikeGates.Images.Parkour.png}" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" Margin="0,0,0,0"/>
-                    <Label Text="Parkour" FontSize="25" Opacity="0.6" TextColor="#20BFA9" HorizontalTextAlignment="Center" Margin="0,-24,0,16" Padding="0,0,0,0"/>
-                </StackLayout>
-            </Frame>
+                <!--OVERVIEW PLAYERS-->
+                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,32,0,0" Padding="0,0,0,0">
+                    <StackLayout>
+                        <Label Text="Player names" FontSize="30" FontAttributes="Bold" TextColor="White" Margin="16,8,0,0"/>
 
-            <!--OVERVIEW PLAYERS-->
-            <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,32,0,0" Padding="0,0,0,0">
-                <StackLayout>
-                    <Label Text="Player names" FontSize="30" FontAttributes="Bold" TextColor="White" Margin="16,8,0,0"/>
+                        <Label x:Name="name1" Text="" FontSize="25" FontAttributes="Bold" TextColor="#20BFA9" Margin="16,8,0,0"/>
+                        <BoxView x:Name="name1B" Color="#20BFA9" HeightRequest="1" Margin="16,0,16,0"/>
 
-                    <Label Text="Thibault" FontSize="25" FontAttributes="Bold" TextColor="#20BFA9" Margin="16,8,0,0"/>
-                    <BoxView Color="#20BFA9" HeightRequest="1" Margin="16,0,16,0"/>
+                        <Label x:Name="name2" Text="" FontSize="25" FontAttributes="Bold" TextColor="#F2C8EE" Margin="16,16,0,0"/>
+                        <BoxView x:Name="name2B" Color="#F2C8EE" HeightRequest="1" Margin="16,0,16,0"/>
 
-                    <Label Text="Laurens" FontSize="25" FontAttributes="Bold" TextColor="#F2C8EE" Margin="16,16,0,0"/>
-                    <BoxView Color="#F2C8EE" HeightRequest="1" Margin="16,0,16,0"/>
+                        <Label x:Name="name3" Text="" FontSize="25" FontAttributes="Bold" TextColor="#EE786C" Margin="16,16,0,0"/>
+                        <BoxView x:Name="name3B" Color="#EE786C" HeightRequest="1" Margin="16,0,16,0"/>
 
-                    <Label Text="Robin" FontSize="25" FontAttributes="Bold" TextColor="#EE786C" Margin="16,16,0,0"/>
-                    <BoxView Color="#EE786C" HeightRequest="1" Margin="16,0,16,0"/>
+                        <Label x:Name="name4" Text="" FontSize="25" FontAttributes="Bold" TextColor="#FEB95A" Margin="16,16,0,0"/>
+                        <BoxView x:Name="name4B" Color="#FEB95A" HeightRequest="1" Margin="16,0,16,0"/>
 
-                    <Label Text="Henri" FontSize="25" FontAttributes="Bold" TextColor="#FEB95A" Margin="16,16,0,0"/>
-                    <BoxView Color="#FEB95A" HeightRequest="1" Margin="16,0,16,0"/>
-
-                    <Label Text="Niels" FontSize="25" FontAttributes="Bold" TextColor="#08ADF6" Margin="16,16,0,0"/>
-                    <BoxView Color="#08ADF6" HeightRequest="1" Margin="16,0,16,16"/>
-                </StackLayout>
-            </Frame>
-
-
-            <!--CREATE BUTTON-->
-            <Frame BorderColor="White" CornerRadius="7" BackgroundColor="#2C2C34" Margin="0,48,0,0">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" Text="Create" FontSize="30" FontAttributes="Bold" TextColor="White"/>
-                    <Image Grid.Column="1" HorizontalOptions="End" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowRight.png}" WidthRequest="35" HeightRequest="35" />
-                </Grid>
-
-            </Frame>
+                        <Label x:Name="name5" Text="" FontSize="25" FontAttributes="Bold" TextColor="#08ADF6" Margin="16,16,0,0"/>
+                        <BoxView x:Name="name5B" Color="#08ADF6" HeightRequest="1" Margin="16,0,16,16"/>
+                    </StackLayout>
+                </Frame>
 
 
+                <!--CREATE BUTTON-->
+                <Frame BorderColor="White" CornerRadius="7" BackgroundColor="#2C2C34" Margin="0,32,0,0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoStartParkour"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="Create" FontSize="30" FontAttributes="Bold" TextColor="White"/>
+                        <Image Grid.Column="1" HorizontalOptions="End" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowRight.png}" WidthRequest="35" HeightRequest="35" />
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            
+            </ScrollView>
 
-        </StackLayout>
-    </ScrollView>
+    </StackLayout>
 
 </ContentPage>

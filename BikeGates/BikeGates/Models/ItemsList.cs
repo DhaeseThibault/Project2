@@ -8,5 +8,6 @@ namespace BikeGates.Models
     {
         public string Name { get; set; }
         public int Score { get; set; }
+        public string Rank { get; set; }
     }
 }

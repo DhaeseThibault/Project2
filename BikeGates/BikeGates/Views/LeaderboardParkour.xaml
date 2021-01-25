@@ -14,8 +14,12 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35" />
-            <Label Grid.Column="1" Margin="60,-8,87,0" Text="Leaderboard" TextColor="#ffffff" FontSize="30" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Grid.Column="1" Margin="60,-8,87,0" Text="Leaderboard" TextColor="#ffffff" FontSize="25" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
         </Grid>
         
         <!--FILTER FOR LEADERBOARD-->
@@ -56,15 +60,13 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <Label Text="1."                   Grid.Column="0"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White"/>
+                            <Label Text="{Binding Rank}"       Grid.Column="0"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White"/>
                             <Label Text="{Binding Name}"       Grid.Column="1"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White"/>
-                            <Label Text="{Binding Score}"      Grid.Column="2"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White" HorizontalTextAlignment="End"/>
+                            <Label Text="{Binding Points}"     Grid.Column="2"  FontSize="Large" VerticalTextAlignment="Center" TextColor="White" HorizontalTextAlignment="End"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
-        
     </StackLayout>
 </ContentPage>

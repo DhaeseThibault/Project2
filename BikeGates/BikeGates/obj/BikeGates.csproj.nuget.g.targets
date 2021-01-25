@@ -6,5 +6,6 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.6.0.1141\buildTransitive\Xamarin.Forms.targets" Condition="Exists('C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.6.0.1141\buildTransitive\Xamarin.Forms.targets')" />
     <Import Project="$(NuGetPackageRoot)netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('$(NuGetPackageRoot)netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.azure.cosmos\3.16.0\build\netstandard2.0\Microsoft.Azure.Cosmos.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.azure.cosmos\3.16.0\build\netstandard2.0\Microsoft.Azure.Cosmos.targets')" />
   </ImportGroup>
 </Project>

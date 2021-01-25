@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeGates.Views.GameScreenSurvival" xmlns:local1="clr-namespace:BikeGates.Models" 
+             NavigationPage.HasNavigationBar="False">
+
+
+    <Grid>
+        <Image x:Name="imgPlayer1" Aspect="Fill" Source="{local1:ImageResourceExtensions BikeGates.Images.Player1.png}"/>
+        <Image x:Name="imgPlayer2" Aspect="Fill" Source="{local1:ImageResourceExtensions BikeGates.Images.Player2.png}"/>
+        <Image x:Name="imgPlayer3" Aspect="Fill" Source="{local1:ImageResourceExtensions BikeGates.Images.Player3.png}"/>
+        <Image x:Name="imgPlayer4" Aspect="Fill" Source="{local1:ImageResourceExtensions BikeGates.Images.Player4.png}"/>
+        <Image x:Name="imgPlayer5" Aspect="Fill" Source="{local1:ImageResourceExtensions BikeGates.Images.Player5.png}"/>
+        <StackLayout Padding="32,16,32,32" BackgroundColor="Transparent">
+            <Label x:Name="lblName" Text="Thibault" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"/>
+
+            <Frame BackgroundColor="#2C2C34" CornerRadius="30" Margin="0,32,0,0" Padding="0,8,0,0">
+                <StackLayout>
+                    <Label Text="Time" FontSize="30" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label x:Name="CountLabel" Text="0" FontSize="124" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,0,0,73"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#2C2C34" CornerRadius="30" Margin="0,32,0,0" Padding="0,8,0,0" x:Name="frmAddSec">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoEndScreenSurvival"/>
+                </Frame.GestureRecognizers>
+                <StackLayout>
+                    <Image Source="{local1:ImageResourceExtensions BikeGates.Images.StopRunSurvival.png}" HeightRequest="150" Margin="0,44,0,0"/>
+                    <Label Text="Stop this run" FontSize="30" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,0,0,73"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>

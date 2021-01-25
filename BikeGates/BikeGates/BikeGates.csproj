@@ -14,25 +14,52 @@
     <None Remove="Images\ArrowDown.png" />
     <None Remove="Images\ArrowLeft.png" />
     <None Remove="Images\ArrowRight.png" />
+    <None Remove="Images\FirstPlace.png" />
     <None Remove="Images\Parkour.png" />
+    <None Remove="Images\Player1.png" />
+    <None Remove="Images\Player2.png" />
+    <None Remove="Images\Player3.png" />
+    <None Remove="Images\Player4.png" />
+    <None Remove="Images\Player5.png" />
+    <None Remove="Images\SecondPlace.png" />
     <None Remove="Images\Smartgoal.png" />
+    <None Remove="Images\StopRunSurvival.png" />
     <None Remove="Images\Survival.png" />
+    <None Remove="Images\test.png" />
+    <None Remove="Images\ThirdPlace.png" />
     <None Remove="Images\TimeRace.png" />
+    <None Remove="Models\Player2.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Images\ArrowDown.png" />
     <EmbeddedResource Include="Images\ArrowLeft.png" />
     <EmbeddedResource Include="Images\ArrowRight.png" />
+    <EmbeddedResource Include="Images\FirstPlace.png" />
     <EmbeddedResource Include="Images\Parkour.png" />
+    <EmbeddedResource Include="Images\Player1.png" />
+    <EmbeddedResource Include="Images\Player2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Player3.png" />
+    <EmbeddedResource Include="Images\Player4.png" />
+    <EmbeddedResource Include="Images\Player5.png" />
+    <EmbeddedResource Include="Images\StopRunSurvival.png" />
+    <Resource Include="Models\Player2.png" />
+    <EmbeddedResource Include="Images\SecondPlace.png" />
     <EmbeddedResource Include="Images\Smartgoal.png" />
     <EmbeddedResource Include="Images\Survival.png" />
+    <EmbeddedResource Include="Images\test.png" />
+    <EmbeddedResource Include="Images\ThirdPlace.png" />
     <EmbeddedResource Include="Images\TimeRace.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.16.0" />
+    <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="1.0.8" />
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms.InputKit" Version="3.4.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,7 +69,19 @@
     <EmbeddedResource Update="Views\ChoicePlayer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\CountdownScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\EndLeaderboard.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\EndScreenParkour.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\EndScreenSurvival.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\EndScreenTimeRace.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\FirstPlace.xaml">
@@ -51,25 +90,25 @@
     <EmbeddedResource Update="Views\GameScreenParkour.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\LeaderboardChooseGamemode.xaml">
+    <EmbeddedResource Update="Views\GameScreenSurvival.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\GameScreenTimeRace.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\LeaderboardParkour.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\LeaderboardScoreAfterGame.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Views\ReviewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\StartScreenParkour.xaml">
+    <EmbeddedResource Update="Views\SecondPlace.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\StartScreenSurvival.xaml">
+    <EmbeddedResource Update="Views\StartScreenGamemode.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\StartScreenTimeRace.xaml">
+    <EmbeddedResource Update="Views\ThirdPlace.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -14,13 +14,21 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35" />
-                <Label Grid.Column="1" Margin="60,0,87,0" Text="Gamemode" TextColor="#ffffff" FontSize="30" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="imgBackBtn"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Grid.Column="1" Margin="60,0,87,0" Text="Gamemode" TextColor="#ffffff" FontSize="25" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
             </Grid>
+            
         <ScrollView>
             <StackLayout>
                 <!--GAMEMODE PARKOUR-->
-                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,32,0,0" Padding="0,0,0,0">
+                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,32,0,0" Padding="0,0,0,0" x:Name="frmParkour">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AddParkourListGoNextPage"/>
+                    </Frame.GestureRecognizers>
                     <StackLayout Margin="16,16,16,16">
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -46,7 +54,10 @@
                 </Frame>
 
                 <!--GAMEMODE TIME RACE-->
-                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,24,0,0" Padding="0,0,0,0">
+                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,24,0,0" Padding="0,0,0,0" x:Name="frmTimeRace">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AddTimeRaceListGoNextPage"/>
+                    </Frame.GestureRecognizers>
                     <StackLayout Margin="16,16,16,16">
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -71,7 +82,10 @@
                 </Frame>
 
                 <!--GAMEMODE SURVIVAL-->
-                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,24,0,0" Padding="0,0,0,0">
+                <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,24,0,0" Padding="0,0,0,0" x:Name="frmSurvival">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AddSurvivalListGoNextPage"/>
+                    </Frame.GestureRecognizers>
                     <StackLayout Margin="16,16,16,16">
                         <Grid>
                             <Grid.ColumnDefinitions>

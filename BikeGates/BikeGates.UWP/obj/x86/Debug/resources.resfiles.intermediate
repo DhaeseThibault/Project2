@@ -1,3 +1,4 @@
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.Microsoft.Bcl.HashCode.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.Microsoft.CSharp.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.Microsoft.VisualBasic.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Collections.Concurrent.SR.resw
@@ -9,9 +10,11 @@ D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.ComponentMo
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.ComponentModel.EventBasedAsync.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Configuration.ConfigurationManager.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Console.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Data.Common.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Data.SqlClient.SR.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Diagnostics.DiagnosticSource.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Diagnostics.FileVersionInfo.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Diagnostics.Process.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Diagnostics.TextWriterTraceListener.SR.resw
@@ -30,6 +33,7 @@ D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Linq.Expres
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Linq.Parallel.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Linq.Queryable.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Linq.SR.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Memory.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Net.Http.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Net.HttpListener.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Net.Mail.SR.resw
@@ -73,7 +77,9 @@ D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Security.Cr
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Security.Cryptography.Csp.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Security.Cryptography.Encoding.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Security.Cryptography.Primitives.SR.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Security.Cryptography.ProtectedData.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Security.Cryptography.X509Certificates.SR.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Security.Permissions.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Security.Principal.Windows.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Text.Encoding.CodePages.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Text.RegularExpressions.SR.resw
@@ -84,3 +90,9 @@ D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Threading.T
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Threading.Thread.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.Transactions.Local.SR.resw
 D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\FxResources.System.ValueTuple.SR.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\Microsoft.Azure.Cosmos.Client\en-US\Microsoft.Azure.Cosmos.ClientResources.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\Microsoft.Azure.Cosmos.Core\en-US\Microsoft.Azure.Cosmos.Core.ResourceStrings.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\Microsoft.Azure.Cosmos.Table\en-US\Microsoft.Azure.Cosmos.Table.TableResources.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\Microsoft.OData.Core\en-US\Microsoft.OData.Core.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\Microsoft.OData.Edm\en-US\Microsoft.OData.Edm.resw
+D:\Project2\BikeGates\BikeGates.UWP\obj\x86\Debug\Microsoft.Spatial\en-US\Microsoft.Spatial.resw

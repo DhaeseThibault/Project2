@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BikeGates" xmlns:local1="clr-namespace:BikeGates.Models"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
              x:Class="BikeGates.Views.ChoicePlayer"
              xmlns:controls="clr-namespace:BikeGates.Models"
              NavigationPage.HasNavigationBar="False">
 
-    <ScrollView>
         <StackLayout Padding="32,16,32,32" BackgroundColor="#171721">
             <!--TOPBAR-->
             <Grid>
@@ -15,39 +15,55 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35" />
-                <Label Grid.Column="1" Margin="60,0,87,0" Text="Gamemode" TextColor="#ffffff" FontSize="30" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                <Image Grid.Column="0" HorizontalOptions="Start" Source="{local1:ImageResourceExtensions BikeGates.Images.ArrowLeft.png}" WidthRequest="35" HeightRequest="35">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="imgBackBtn"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Grid.Column="1" Margin="60,0,87,0" Text="Players" TextColor="#ffffff" FontSize="25" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
             </Grid>
 
-            <!--SLIDER AMOUNT OF PLAYERS-->
+            <!--SLIDERAMOUNT OF PLAYERS-->
             <Label Text="Amount" FontSize="30" FontAttributes="Bold" TextColor="White" Margin="0,32,0,0 "/>
 
             <Frame BackgroundColor="#2C2C34" CornerRadius="7" Margin="0,16,0,0" Padding="0,0,0,0" HeightRequest="100">
                 <!--<Slider x:Name="sldPlayers" Maximum="5" Minimum="1"/>-->
-                <!--<local1:SliderLabelControl HeightRequest="50" Maximum="5" Minimum="1" Color="#FEB95A" />-->
-                <local1:CustomSlider ThumbColor="#FEB95A" Maximum="5" Minimum="1" />
+                <!--<local1:SliderLabelControl HeightRequest="50" Maximum="5" Minimum="1" Color="#FEB95A"/>-->
+                <!--<local1:CustomSlider ThumbColor="#FEB95A" Maximum="5" Minimum="1" />-->
+            <StackLayout>
+                <Grid Padding="8,8,8,8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="1" TextColor="White" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                    <Label Text="5" TextColor="White" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="End" HorizontalOptions="End"/>
+                    <Label x:Name="lblSlider" Text="{Binding Source={x:Reference Name=sldPlayers}, Path=Value}" IsVisible="False" PropertyChanged="SliderValue_PropertyChanged"/>
+                </Grid>
+                <input:AdvancedSlider x:Name="sldPlayers" MaxValue="5" MinValue="1" StepValue="1" TextColor="White" DisplayMinMaxValue="False" Margin="0,-48,0,0" Value="{Binding SliderValue}"/>
+
+            </StackLayout>
             </Frame>
 
             <Label Text="Player names" FontAttributes="Bold" FontSize="30" TextColor="White" Margin="0,32,0,0"/>
-            <!--<Entry FontSize="25" FontAttributes="Bold" Placeholder="Player 1" TextColor="#20BFA9" Opacity="0.6" PlaceholderColor="#20BFA9" ClearButtonVisibility="WhileEditing" Margin="0,16,0,0"/>
-            <Entry FontSize="25" FontAttributes="Bold" Placeholder="Player 2" TextColor="#F2C8EE" Opacity="0.6" PlaceholderColor="#F2C8EE" ClearButtonVisibility="WhileEditing" Visual="Material"/>
-            <Entry FontSize="25" FontAttributes="Bold" Placeholder="Player 3" TextColor="#EE786C" Opacity="0.6" PlaceholderColor="#EE786C" ClearButtonVisibility="WhileEditing"/>
-            <Entry FontSize="25" FontAttributes="Bold" Placeholder="Player 4" TextColor="#FEB95A" Opacity="0.6" PlaceholderColor="#FEB95A" ClearButtonVisibility="WhileEditing"/>
-            <Entry FontSize="25" FontAttributes="Bold" Placeholder="Player 5" TextColor="#08ADF6" Opacity="0.6" PlaceholderColor="#08ADF6" ClearButtonVisibility="WhileEditing"/>-->
 
-            <controls:CustomEntry FontSize="25" FontAttributes="Bold" Placeholder="Player 1" TextColor="#20BFA9" Opacity="0.6" PlaceholderColor="#20BFA9" ClearButtonVisibility="WhileEditing" Margin="0,8,0,0"/>
-            <BoxView HeightRequest="1" Color="#20BFA9" Margin="0,-8,0,0"/>
+            <controls:CustomEntry x:Name="Name1" FontSize="25" FontAttributes="Bold" Placeholder="Player 1" TextColor="#20BFA9" Opacity="0.6" PlaceholderColor="#20BFA9" ClearButtonVisibility="WhileEditing" Margin="0,8,0,0" />
+            <BoxView x:Name="Name1B" HeightRequest="1" Color="#20BFA9" Margin="0,-8,0,0" />
 
-            <controls:CustomEntry FontSize="25" FontAttributes="Bold" Placeholder="Player 2" TextColor="#F2C8EE" Opacity="0.6" PlaceholderColor="#F2C8EE" ClearButtonVisibility="WhileEditing"/>
-            <controls:CustomEntry FontSize="25" FontAttributes="Bold" Placeholder="Player 3" TextColor="#EE786C" Opacity="0.6" PlaceholderColor="#EE786C" ClearButtonVisibility="WhileEditing"/>
-            <controls:CustomEntry FontSize="25" FontAttributes="Bold" Placeholder="Player 4" TextColor="#FEB95A" Opacity="0.6" PlaceholderColor="#FEB95A" ClearButtonVisibility="WhileEditing"/>
-            <controls:CustomEntry FontSize="25" FontAttributes="Bold" Placeholder="Player 5" TextColor="#08ADF6" Opacity="0.6" PlaceholderColor="#08ADF6" ClearButtonVisibility="WhileEditing"/>
+            <controls:CustomEntry x:Name="Name2" FontSize="25" FontAttributes="Bold" Placeholder="Player 2" TextColor="#F2C8EE" Opacity="0.6" PlaceholderColor="#F2C8EE" ClearButtonVisibility="WhileEditing" Margin="0,8,0,0" IsVisible="False"/>
+            <BoxView x:Name="Name2B" HeightRequest="1" Color="#F2C8EE" Margin="0,-8,0,0" IsVisible="False"/>
 
-            
+            <controls:CustomEntry x:Name="Name3" FontSize="25" FontAttributes="Bold" Placeholder="Player 3" TextColor="#EE786C" Opacity="0.6" PlaceholderColor="#EE786C" ClearButtonVisibility="WhileEditing" IsVisible="False"/>
+            <BoxView x:Name="Name3B" HeightRequest="1" Color="#EE786C" Margin="0,-8,0,0" IsVisible="False"/>
 
-            <Button Margin="0,48,0,0" Text="Review" FontAttributes="Bold" FontSize="30" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="72"/>
+            <controls:CustomEntry x:Name="Name4" FontSize="25" FontAttributes="Bold" Placeholder="Player 4" TextColor="#FEB95A" Opacity="0.6" PlaceholderColor="#FEB95A" ClearButtonVisibility="WhileEditing" IsVisible="False"/>
+            <BoxView x:Name="Name4B" HeightRequest="1" Color="#FEB95A" Margin="0,-8,0,0" IsVisible="False"/>
 
+            <controls:CustomEntry x:Name="Name5" FontSize="25" FontAttributes="Bold" Placeholder="Player 5" TextColor="#08ADF6" Opacity="0.6" PlaceholderColor="#08ADF6" ClearButtonVisibility="WhileEditing" IsVisible="False"/>
+            <BoxView x:Name="Name5B" HeightRequest="1" Color="#08ADF6" Margin="0,-8,0,0" IsVisible="False"/>
+
+
+            <Button Clicked="btnReview" Margin="0,48,0,0" Text="Review" FontAttributes="Bold" FontSize="30" BorderColor="White" BorderWidth="1" CornerRadius="7" BackgroundColor="#2C2C34" TextColor="White" HeightRequest="72"/>
         </StackLayout>
-    </ScrollView>
 
 </ContentPage>
